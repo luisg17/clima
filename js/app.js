@@ -1,10 +1,9 @@
-//Revisar si el navegador soporta service worker
 
 if('serviceWorker' in navigator){
-    //registramos nuestro sw.js y esto nos retornara un Promise
-    navigator.serviceWorker.register('/clima/sw.js')
-        .then(registrado => console.log('Se instalo correctamente', registrado))
-        .catch(error => console.log('Fallo la instalacion', error))
+  //registramos nuestro sw.js y esto nos retornara un Promise
+  navigator.serviceWorker.register('/clima/sw.js')
+      .then(registrado => console.log('Se instalo correctamente', registrado))
+      .catch(error => console.log('Fallo la instalacion', error))
 }
 
 // Code to handle install prompt on desktop

@@ -1,7 +1,6 @@
 //Cachear archivos de la pagina para que funcione sin internet
 const nombreCache = 'clima-v1';
 const archivos = [
-    //Para evitar error de ruta colocamos un . es decir la ruta relativa
     '/clima/',
     '/clima/index.html',
     '/clima/error.html',
